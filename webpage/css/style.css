@@ -28,3 +28,33 @@ svg {
     cursor: pointer;
     fill: #808080;
 } */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.rubrik{
+    display: inline-block;
+}
+
+nav{
+    display: inline-block;
+    
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
