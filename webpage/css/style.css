@@ -37,6 +37,27 @@ header{
     flex-direction: row;
 }
 
+.topline{
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4%;
+    width: 100%;
+}
+
+.toplinespan{
+    color: #999;
+}
+
+p{
+    font-size: 15px;
+    margin-top: 5px;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
 .rubrik{
     display: inline-block;
     margin-right: auto;
@@ -61,3 +82,4 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
