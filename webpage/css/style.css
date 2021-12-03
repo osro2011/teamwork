@@ -1,15 +1,30 @@
 svg {
-    width: 80%;
+    width: 100%;
 }
 
 #SE {
     fill: #b3b3b3;
 }
 
+#SE:hover {
+    cursor: pointer;
+    fill: #808080;
+}
+
 .United.States {
     fill: #b3b3b3;
 }
 
+.United.States:hover ~ .United.States, .United.States:hover {
+    cursor: pointer;
+    fill: #808080;
+}
+
 .Russian.Federation {
     fill: #b3b3b3;
+}
+
+.Russian.Federation:hover ~ .Russian.Federation, .Russian.Federation:hover {
+    cursor: pointer;
+    fill: #808080;
 }
