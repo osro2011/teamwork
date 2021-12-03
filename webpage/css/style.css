@@ -30,6 +30,7 @@ svg {
 }
 
 header{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,15 +39,17 @@ header{
 
 .rubrik{
     display: inline-block;
+    margin-right: auto;
 }
 
 nav{
     display: inline-block;
-    
+    margin-right: auto;
 }
 
 li{
     display: inline-block;
+    margin-right: 20px;
 }
 
 a{
