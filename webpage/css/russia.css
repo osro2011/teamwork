@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+.img-grid {
+    display: grid;
+    height: 80vh;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.info h1 {
+    text-align: center;
+}
+
+.info p {
+    width: 40%;
+    margin: 2.5% 7.5% 2.5% 2.5%;
+
+    float: right;
+}
+
+.info p:first-of-type {
+    margin: 2.5% 2.5% 2.5% 7.5%;
+
+    float: left;
+}
