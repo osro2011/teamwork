@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.pic{
+    width: 50%;
+}
+
+img{
+    width: 25%;
+    height: 30%;
+}
+
+.toppic{
+    position: absolute;
+    top: 2%;
+    left: 0;
+}
+
+.toppic2{
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.botpic{
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+}
+
+h2{
+    color: white;
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+p{
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.block1{
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    right: 5%;
+    top: 10%;
+}
+
+.block2{
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    right: 5%;
+    top: 40%;
+}
+
+.block3{
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    right: 5%;
+    top: 70%;
+}
