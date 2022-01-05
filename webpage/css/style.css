@@ -101,13 +101,16 @@ svg {
 }
 
 #SE {
+    cursor: pointer;
     fill: #b3b3b3;
 }
 
 .United.States {
+    cursor: pointer;
     fill: #b3b3b3;
 }
 
 .Russian.Federation {
+    cursor: pointer;
     fill: #b3b3b3;
 }
