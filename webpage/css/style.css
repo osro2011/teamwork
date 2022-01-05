@@ -2,16 +2,20 @@
     margin: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+    grid: auto 1fr / auto;
+}
+
 /*
 Typography
 */
 h1 {
-    display: inline-block;
-    margin-right: auto;
 }
 
 p {
-    font-size: 15px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -23,6 +27,9 @@ a {
 /*
 Header
 */
+header {
+    border-bottom: solid 1px black;
+}
 
 /*
 Topline
@@ -47,12 +54,17 @@ Topline
 Nav
 */
 nav {
+    position: relative;
+
+    padding: 0.6rem 0;
+
     display: flex;
     justify-content: center;
 }
 
-nav > * {
-    margin-right: auto;
+nav h1 {
+    position: absolute;
+    left: 1rem;
 }
 
 nav ul {
@@ -74,10 +86,18 @@ nav a:hover{
 /*
 Map
 */
+.svgcontainer {
+    position: relative;
+}
+
 svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 90%;
 }
 
 #SE {
