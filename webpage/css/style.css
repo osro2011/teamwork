@@ -1,5 +1,83 @@
+* {
+    margin: 0;
+}
+
+/*
+Typography
+*/
+h1 {
+    display: inline-block;
+    margin-right: auto;
+}
+
+p {
+    font-size: 15px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+}
+/*
+Header
+*/
+
+/*
+Topline
+*/
+.topline{
+    background-color: #333;
+    top: 0;
+    left: 0;
+}
+
+.toplinespan{
+    color: #999;
+}
+
+.topline p {
+    padding: 0.2rem 0;
+    font-size: medium;
+    text-align: center;
+}
+
+/*
+Nav
+*/
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > * {
+    margin-right: auto;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:not(li:last-of-type) {
+    margin-right: 1rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*
+Map
+*/
 svg {
-    width: 90%;
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 #SE {
@@ -13,58 +91,3 @@ svg {
 .Russian.Federation {
     fill: #b3b3b3;
 }
-
-header{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.topline{
-    background-color: #333;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4%;
-    width: 100%;
-}
-
-.toplinespan{
-    color: #999;
-}
-
-p{
-    font-size: 15px;
-    margin-top: 5px;
-    display: block;
-    color: #fff;
-    text-align: center;
-}
-
-.rubrik{
-    display: inline-block;
-    margin-right: auto;
-}
-
-nav{
-    display: inline-block;
-    margin-right: auto;
-}
-
-li{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #333;
-    font-size: 25px;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
