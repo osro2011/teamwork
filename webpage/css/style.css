@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -12,14 +13,22 @@ body {
 Typography
 */
 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.2rem;
 }
 
 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     color: #fff;
 }
 
 a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: #333;
     font-size: 1.6rem;
@@ -45,7 +54,9 @@ Topline
 }
 
 .topline p {
+    margin: 0 1rem;
     padding: 0.2rem 0;
+
     font-size: medium;
     text-align: center;
 }
@@ -73,15 +84,35 @@ nav ul {
 
 nav li {
     display: inline-block;
-}
-
-nav li:not(li:last-of-type) {
-    margin-right: 1rem;
+    margin: 0 0.5rem;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1000px) {
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        position: initial;
+        text-align: center;
+
+        margin: 0 2rem;
+    }
+
+    nav ul {
+        margin: 0 2rem;
+        text-align: center;
+    }
+}
+
+
+/*
+Country selection
+*/
 
 /*
 Map
@@ -113,4 +144,47 @@ svg {
 .Russian.Federation {
     cursor: pointer;
     fill: #b3b3b3;
+}
+
+/*
+Flag Menu
+*/
+.flagmenu img {
+    border: solid 2px black;
+    max-width: 40%;
+    display: block;
+    margin: auto;
+}
+.flagmenu {
+    display: none;
+    text-align: center;
+
+    position: relative;
+}
+
+.flagmenu ul {
+    list-style: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flagmenu li {
+    padding: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .svgcontainer {
+        display: none;
+    }
+
+    .flagmenu {
+        display: initial;
+    }
 }
