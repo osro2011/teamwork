@@ -195,6 +195,8 @@ Flag Menu
 .flagmenu {
     display: none;
     text-align: center;
+    
+    height: 80vh;
 
     position: relative;
 }
