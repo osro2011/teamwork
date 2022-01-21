@@ -1,28 +1,41 @@
+var active;
+
 function onMouseEnter(target) {
     for (path of document.getElementsByClassName(target)) {
-        path.style.fill = "#808080"
+        path.style.fill = "#808080";
     }
 }
 
 function onMouseLeave(target) {
-    console.log("left")
     for (path of document.getElementsByClassName(target)) {
-        path.style.fill= "#b3b3b3"
+        path.style.fill= "#b3b3b3";
     }
 }
 
 function onClickSE() {
-    alert("Sweden clicked.")
-}
-
-function onHoverSE() {
-    document.getElementById("SE").style.fill = "#fff"
+    console.log("Sweden clicked.");
+    if (active != null) {
+        active.classList.add("hidden");
+    }
+    active = document.getElementById("sweden-page");
+    active.classList.remove("hidden");
+    
 }
 
 function onClickRU() {
-    alert("Russia clicked.")
+    console.log("Russia clicked.")
+    if (active != null) {
+        active.classList.add("hidden");
+    }
+    active = document.getElementById("russia-page");
+    active.classList.remove("hidden");
 }
 
 function onClickUS() {
-    alert("United States clicked.")
+    console.log("US clicked.")
+    if (active != null) {
+        active.classList.add("hidden");
+    }
+    active = document.getElementById("us-page");
+    active.classList.remove("hidden");
 }
