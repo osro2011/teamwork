@@ -18,6 +18,10 @@ body {
     display: none;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 /*
 Typography
 */
@@ -98,6 +102,28 @@ nav li {
 
 nav a:hover{
     text-decoration: underline;
+}
+
+.home-arrow {
+    position: sticky;
+    top: -5rem;
+
+    transform: translateY(6rem);
+
+    margin-left: 1rem;
+
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 1rem;
+    border: solid #333 2px;
+
+    background-color: #fff;
+}
+
+.home-arrow svg {
+    max-width: 4.5rem;
+    fill: #333;
 }
 
 @media (max-width: 1000px) {

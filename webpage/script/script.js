@@ -12,30 +12,31 @@ function onMouseLeave(target) {
     }
 }
 
-function onClickSE() {
-    console.log("Sweden clicked.");
+function setActive(country) {
     if (active != null) {
         active.classList.add("hidden");
     }
-    active = document.getElementById("sweden-page");
+    if (document.getElementById("body").classList.contains("overflow-hidden")) {
+        document.getElementById("body").classList.remove("overflow-hidden");
+    }
+    active = document.getElementById(country);
+}
+
+function onClickSE() {
+    console.log("Sweden clicked.");
+    setActive("sweden-page");
     active.classList.remove("hidden");
     
 }
 
 function onClickRU() {
     console.log("Russia clicked.")
-    if (active != null) {
-        active.classList.add("hidden");
-    }
-    active = document.getElementById("russia-page");
+    setActive("russia-page");
     active.classList.remove("hidden");
 }
 
 function onClickUS() {
     console.log("US clicked.")
-    if (active != null) {
-        active.classList.add("hidden");
-    }
-    active = document.getElementById("us-page");
+    setActive("us-page");
     active.classList.remove("hidden");
 }
